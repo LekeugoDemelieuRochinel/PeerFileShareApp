@@ -1,9 +1,0 @@
-directories:
-  output: dist
-  buildResources: build
-appId: com.peerfileshareapp
-productName: PeerFileShareApp
-win:
-  target: nsis
-files: []
-electronVersion: 22.0.0
