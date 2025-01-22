@@ -136,7 +136,7 @@
 <body>
     <div class="top-bar">
         <span>My IP: <input id="my-ip" readonly /></span>
-        <span>Peer IP: <input id="peer-ip" /><button id="connect-peer">Connect</button></span>
+        <span>Peer IP: <input id="peer-ip" placeholder="Enter Peer IP Address" /><button id="connect-peer">Connect</button></span>
     </div>
     <div class="container">
         <div class="section">
@@ -147,19 +147,14 @@
                         <h4>Public Files</h4>
                         <button id="make-private">Make Private</button>
                     </div>
-                    <ul id="public-files">
-                        <li>ExampleFile1.txt</li>
-                        <li>ExampleFile2.pdf</li>
-                    </ul>
+                    <ul id="public-files"></ul>
                 </div>
                 <div class="file-section">
                     <div class="file-section-header">
                         <h4>Private Files</h4>
                         <button id="make-public">Make Public</button>
                     </div>
-                    <ul id="private-files">
-                        <li>ConfidentialDoc1.docx</li>
-                    </ul>
+                    <ul id="private-files"></ul>
                 </div>
             </div>
         </div>
@@ -169,13 +164,11 @@
                     <h3>Peer Files</h3>
                     <button id="download-file">Download</button>
                 </div>
-                <ul id="peer-files">
-                    <li>SharedFile1.jpg</li>
-                </ul>
+                <ul id="peer-files"></ul>
             </div>
         </div>
     </div>
-    <script src="renderer.js"></script>
+    <script src="renderer.js" defer></script>
 </body>
 
 </html>

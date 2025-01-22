@@ -3,13 +3,25 @@
   "version": "1.0.0",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-builder"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Peer-to-peer file sharing application",
   "devDependencies": {
-    "electron": "^34.0.0"
+    "electron": "^22.0.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.peerfileshareapp",
+    "productName": "PeerFileShareApp",
+    "win": {
+      "target": "nsis"
+    },
+    "directories": {
+      "output": "dist"
+    }
   }
 }
